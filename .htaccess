@@ -1,0 +1,10 @@
+# Kích hoạt Rewrite Engine
+RewriteEngine On
+
+# Đảm bảo mọi đường dẫn bắt đầu từ thư mục gốc dự án
+RewriteBase /BanPhuKien/
+
+# Chuyển hướng URL đẹp
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
