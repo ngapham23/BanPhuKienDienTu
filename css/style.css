@@ -46,7 +46,7 @@ ul.list_menu {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 17px;
+    gap: 4px;
    
 }
 ul.list_menu li a {
@@ -74,7 +74,7 @@ ul.list_menu li:hover {
    
     border: 1px solid #100210;
     width:100%;
-    height: 700px;
+    height: 784px;
 }
 
 .sidebar{
@@ -121,14 +121,24 @@ ul.list_sidebar li a{
    
     
 }
-ul.list_product{
-    list-style-type: none;     /* Xóa dấu chấm tròn */
+/* ul.list_product{
+    list-style-type: none;  
     padding: 0;
     margin: 0;
     width: 100%;
     
    
+} */
+ul.list_product {
+    list-style-type: none; /* Xóa dấu chấm tròn */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các item nằm gọn trong các dòng */
+    justify-content: space-around; /* Căn đều các item */
 }
+
 ul.list_product a{
     text-decoration: none;
    
@@ -146,12 +156,18 @@ p.price_product {
     color: red;
 }
 ul.list_product li {
-    
-    width: 18%;
+    width: 18%; /* Điều chỉnh chiều rộng của mỗi ô sản phẩm */
     border: 1px solid #000000;
-    float: left;
     margin: 10px;
-    background:whitesmoke;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column; /* Cho phép các thành phần trong li nằm theo chiều dọc */
+    border-radius: 5px;
+    align-items: center; /* Căn giữa các phần tử con */
+    padding: 10px;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt khi hover */
 }
 ul.list_product li:hover{
     transform: scale(1.05); /* Phóng to sản phẩm lên 5% */

@@ -22,7 +22,15 @@
                         include ("main/lienhe.php");
                     }elseif($tam == 'sanpham'){
                         include ("main/sanpham.php");
-                    }else{
+                    }elseif($tam == 'dangky'){
+                        include ("main/register.php");
+                    }elseif($tam == 'dangnhap'){
+                        include ("main/login.php");
+                    }
+                    elseif($tam == 'thanhtoan'){
+                        include ("main/thanhtoan.php");
+                    }
+                    else{
                          include ("main/index.php");
                     }   
                   

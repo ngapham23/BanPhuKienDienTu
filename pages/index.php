@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <link rel="stylesheet" type="text/css" href="../../BanPhuKien/css/style.css">
-<link rel="stylesheet" type="text/css" href="../../BanPhuKien/css/annut.css">
+
 <link rel="stylesheet" type="text/css" href="../../BanPhuKien/css/slideimg.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -22,7 +22,8 @@
     <div class="wrapper">
    <?php
    
-
+   session_start();
+//    unset($_SESSION['dangnhap']);
     include "../admin/Sconfig/myconfig.php";
     include "formcon/header.php";
 

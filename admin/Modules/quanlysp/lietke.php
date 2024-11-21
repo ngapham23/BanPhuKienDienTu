@@ -19,9 +19,15 @@
 }
 
 .product-table th, .product-table td {
+    word-wrap: break-word;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     padding: 12px;
     text-align: center;
 }
+
+
 
 .product-table th {
     background-color: #4CAF50;
